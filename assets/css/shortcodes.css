@@ -1,0 +1,36 @@
+/**
+* Icon style
+*/
+.t-icon {
+	display: flex;
+	align-items: center;
+}
+.t-icon::before {
+	content: '';
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+}
+.t-icon__box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 1em;
+}
+/**
+* END Icon style
+*/
+
+.mhs-info-box__contact-method,
+.mhs-info-box__title {
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    padding: 0;
+}
+
+.mhs-info-box .mhs-info-box__contact-method {
+    margin-bottom: 0.5em;
+}
