@@ -17,7 +17,7 @@ function mhsContactInfo($atts) {
     ob_start();
 
     if($phoneNumber !== '' || $emailAddress !== '' || strcmp($addressLineOne, '') !== 0 || $webSite !== '') :  ?>
-        <h4 class="mhs-info-box__title"><?php esc_html_e('Contact', 'mhsextension') ?></h4>
+        <h4 class="mhs-info-box__title"><?php esc_html_e('Contact', '_pluginname') ?></h4>
         <div class="mhs-info-box" style="color:<?php echo esc_attr( $textcolor ) ?>;">
             <?php
                 echo $companyName == '' ? '' : '<p class="mhs-info-box__contact-method"><span><strong>'.$companyName.'</strong></span></p>';

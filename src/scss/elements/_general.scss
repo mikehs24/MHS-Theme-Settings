@@ -1,0 +1,90 @@
+.mhsadmin-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    &-section {
+        margin-top: 2em;
+        padding: 2em;
+        background-color: #fff;
+    }
+
+    &__input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    &__input-box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    &__input-box--submit {
+        display: block;
+        margin-top: 2em;
+    }
+
+    &__input-label {
+        position: absolute;
+        left: 10px;
+        top: 18px;
+        padding: 0 .5em;
+        background-color: #fff;
+        color: #ababab;
+        z-index: 100;
+    }
+
+    input[type=text],
+    input[type=tel],
+    input[type=email] {
+        margin-top: 2em;
+        height: 45px;
+        z-index: 50;
+    }
+
+    textarea {
+        max-width: 100%;
+        height: 10rem;
+    }
+}
+
+.mhsadmin-settings {
+    &__disabled {
+        color: #ababab;
+    }
+
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__info {
+        margin-top: 0;
+        color: #b72f2f;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .mhsadmin-info {
+        &__input-group {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        &__input-box {
+            flex: 0.5;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .mhsadmin-info {
+        &__input-box {
+            // flex: 0.25;
+            max-width: 600px;
+        }
+    }
+}

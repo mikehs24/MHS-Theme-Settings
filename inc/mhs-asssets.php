@@ -1,6 +1,6 @@
 <?php
 
 function mhsEnqueueAssetsFrontend() {
-    wp_enqueue_style( 'mhsExtensions', plugin_dir_url(__FILE__) . '../assets/css/shortcodes.css' );
+    wp_enqueue_style( 'mhsExtensions', plugin_dir_url(__FILE__) . '../assets/css/mhs-extension.css' );
 }
-add_action( 'wp_enqueue_scripts', 'mhsEnqueueAssetsFrontend' );
+add_action( 'admin_enqueue_scripts', 'mhsEnqueueAssetsFrontend' );

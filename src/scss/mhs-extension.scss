@@ -1,0 +1,65 @@
+/* deklaracje kolorów, fontów, ikon (jako zmienne) */
+// @import './settings/colors';
+// @import './settings/breakpoints';
+// @import './settings/dimensions';
+
+
+/* zestaw mixinów oraz funkcji Sass */
+// @import './tools/mixins';
+
+
+/* resetowanie domyślnych stylów, ładowanie fontów */
+// @import './generic/reset';
+// @import './generic/fonts';
+// @import './generic/default';
+// @import './generic/guttenberg';
+
+
+/* ładowanie plików z zewnętrznych bibliotek, 
+np. z paczek npm (aby potem całość CSS zamieścić
+w pojedynczym pliku) */
+// @import './vendors/slick';
+
+
+/* wygląd elementów bez przypisanych klas, np, h1, h2, p, button */
+@import './elements/general';
+
+
+/* klasy struktury strony odpowiedzialne za layout 
+i strukturę, czyli np. header, footer, menu, grid itd */
+// @import './layout/grid';
+// @import './layout/containers';
+// @import './layout/wp';
+// @import './layout/nav';
+// @import './layout/header';
+// @import './layout/footer';
+// @import './layout/sidebar';
+
+
+/* mniejsze elementy interfejsu użytkownika, jak np. buttony, 
+animacje hover dla elementów itp. (pod warunkiem, że takie 
+elementy są globalnie używane w różnych miejscach jak m.in. 
+buttony) */
+// @import './ui/elements';
+
+
+/* stylowanie samych sekcji */
+// @import './sections/section-styles';
+
+
+/* elementy składowe sekcji, jak np. slider czy lista artykułów */
+@import './components/single-product';
+// @import './components/post';
+// @import './components/single';
+// @import './components/page';
+// @import './components/comments';
+// @import './components/archive';
+// @import './components/sections';
+// @import './components/wp';
+// @import './components/cpt';
+// @import './components/footer';
+
+
+// @import './trumps/helpers';
+// @import './trumps/shortcodes';
+// @import './trumps/woocommerce';
