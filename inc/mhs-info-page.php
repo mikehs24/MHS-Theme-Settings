@@ -1,15 +1,19 @@
 <?php
 
-class MhsWebsiteInfoPage {
-    function __construct() {
+class MhsWebsiteInfoPage 
+{
+    function __construct() 
+    {
         add_action( 'admin_menu', array( $this, 'infoWebsitePage' ) );
     }
 
-    function infoWebsitePage() {
+    function infoWebsitePage() 
+    {
         $mhsInfoPage = add_submenu_page( 'mhs-settings-page', esc_html__('Contact info', '_pluginname'), esc_html__('Contact info', '_pluginname'), 'manage_options', 'mhs-info-page', array( $this, 'infoPageHTML' ) );
     }
 
-    function saveInfo() { 
+    function saveInfo() 
+    { 
         if( wp_verify_nonce( $_POST['securityInfoDataSave'], 'saveInfoData' ) && current_user_can( 'manage_options' ) ) {
             update_option( 'mep_company_name', sanitize_text_field( $_POST['mep_company_name'] ) );
             update_option( 'mep_company_vat_number', sanitize_text_field( $_POST['mep_company_vat_number'] ) );
@@ -24,7 +28,8 @@ class MhsWebsiteInfoPage {
         <?php }
     }
     
-    function infoPageHTML() { ?>
+    function infoPageHTML() 
+    { ?>
         <div class="wrap">
             <h1><?php esc_html_e('Contact info', '_pluginname') ?></h1>
             <p>To view contact info in your website use shortcode: <strong>[mhs_show_contact_info iconcolor=#F0F0F0 textcolor=#E5E5E5 linkcolor=#abc123]</strong></p>

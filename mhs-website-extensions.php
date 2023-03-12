@@ -13,12 +13,15 @@
 
 if( ! defined( 'ABSPATH' ) ) exit;
 
-class MhsMain {
-    function __construct() {
+class MhsMain 
+{
+    function __construct() 
+    {
         add_action( 'init', array( $this, 'languages' ) ); 
     }
 
-    function languages() {
+    function languages() 
+    {
         load_plugin_textdomain( '_pluginname', false, dirname(plugin_basename(__FILE__)) . '/languages' );
     }
 }
