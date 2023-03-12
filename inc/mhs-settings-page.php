@@ -18,7 +18,7 @@ class MhsExtensionsPack {
     <?php }
 
     function saveSettingsInfo() {
-        if( wp_verify_nonce( $_POST['securitySettingsDataSave'], 'saveSettingsData' ) && current_user_can( 'manage_options' ) ) {
+        if( wp_verify_nonce( $_POST['securityWooSettingsDataSave'], 'saveWooSettingsData' ) && current_user_can( 'manage_options' ) ) {
             update_option( 'mte_woo_product_info', $this->sanitizeInput( $_POST['mte_woo_product_info'] ) );
             update_option( 'mte_woo_product_message', sanitize_text_field( $_POST['mte_woo_product_message'] ) ); ?>
 
@@ -63,10 +63,10 @@ class MhsExtensionsPack {
     function settingsPageHTML() { ?>
         <div class="wrap">
             <h1><?php esc_html_e( 'Settings', '_pluginname' ) ?></h1>
-            <?php if( isset($_POST['mhssettingssubmitted']) && $_POST['mhssettingssubmitted'] == 'true' ) $this->saveSettingsInfo(); ?>
+            <?php if( isset($_POST['mhsep_woosettings_submitted']) && $_POST['mhsep_woosettings_submitted'] == 'true' ) $this->saveSettingsInfo(); ?>
             <form method="POST">
-                <input type="hidden" name="mhssettingssubmitted" value="true">
-                <?php wp_nonce_field( 'saveSettingsData', 'securitySettingsDataSave' ) ?>
+                <input type="hidden" name="mhsep_woosettings_submitted" value="true">
+                <?php wp_nonce_field( 'saveWooSettingsData', 'securityWooSettingsDataSave' ) ?>
                 <div class="mhsadmin-info mhsadmin-info-section">
                     <h2 class="mhsadmin-settings__title<?php if( !is_woocommerce_activated() ) echo ' mhsadmin-settings__disabled'; ?>"><?php esc_html_e( 'WooCommerce options', '_pluginname' ) ?></h2>
                     <?php if( !is_woocommerce_activated() ) echo '<p class="mhsadmin-settings__info">' . esc_html__( 'WooCommerce is not activated! Activate WooCommerce to enable this options.', '_pluginname' ) . '</p>'; ?>
