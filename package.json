@@ -1,5 +1,5 @@
 {
-  "name": "mhs-theme-settings",
+  "name": "mhs-theme-extension",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
