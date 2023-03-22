@@ -1,14 +1,14 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MHS Theme Extensions\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-22 09:30+0000\n"
-"PO-Revision-Date: 2023-03-22 10:38+0000\n"
-"Last-Translator: \n"
-"Language-Team: Polski\n"
-"Language: pl_PL\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
-"&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"POT-Creation-Date: 2023-03-22 08:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,11 +18,11 @@ msgstr ""
 
 #: inc/mhs-info-page.php:69
 msgid "Address Line 1:"
-msgstr "Ulica i numer domu/mieszkania"
+msgstr ""
 
 #: inc/mhs-info-page.php:73
 msgid "Address Line 2:"
-msgstr "Kod pocztowy i miasto"
+msgstr ""
 
 #: inc/mhs-settings-page.php:77
 msgid "After add to cart form"
@@ -42,19 +42,19 @@ msgstr ""
 
 #: inc/mhs-info-page.php:49
 msgid "Company name:"
-msgstr "Nazwa firmy"
+msgstr ""
 
 #: inc/mhs-info-page.php:53
 msgid "Company VAT Number:"
-msgstr "NIP"
+msgstr ""
 
 #: inc/mhs-shortcodes.php:20
 msgid "Contact"
-msgstr "Informacje kontaktowe"
+msgstr ""
 
 #: inc/mhs-info-page.php:14 inc/mhs-info-page.php:40
 msgid "Contact info"
-msgstr "Informacje kontaktowe"
+msgstr ""
 
 #: inc/mhs-settings-page.php:73
 msgid "Disable"
@@ -62,7 +62,7 @@ msgstr ""
 
 #: inc/mhs-info-page.php:63
 msgid "Email:"
-msgstr "Email"
+msgstr ""
 
 #: inc/mhs-settings-page.php:85
 msgid "Enter message here..."
@@ -98,15 +98,15 @@ msgstr ""
 
 #: inc/mhs-info-page.php:59
 msgid "Phone number:"
-msgstr "Numer telefonu"
+msgstr ""
 
 #: inc/mhs-settings-page.php:89 inc/mhs-info-page.php:78
 msgid "Save changes"
-msgstr "Zapisz zmiany"
+msgstr ""
 
 #: inc/mhs-settings-page.php:16 inc/mhs-settings-page.php:62
 msgid "Settings"
-msgstr "Ustawienia"
+msgstr ""
 
 #: inc/mhs-info-page.php:32
 msgid "Sorry, you do not have permission to Perform that action."

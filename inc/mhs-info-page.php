@@ -1,18 +1,20 @@
 <?php
 
+namespace MhsThemeExtension;
+
 class MhsWebsiteInfoPage 
 {
-    function __construct() 
+    public function __construct() 
     {
         add_action( 'admin_menu', array( $this, 'addSubmenuContactInfo' ) );
     }
 
-    function addSubmenuContactInfo() 
+    public function addSubmenuContactInfo() 
     {
         $mhsInfoPage = add_submenu_page( 'mhs-settings-page', esc_html__('Contact info', '_pluginname'), esc_html__('Contact info', '_pluginname'), 'manage_options', 'mhs-info-page', array( $this, 'infoPageHTML' ) );
     }
 
-    function saveInfo() 
+    public function saveInfo() 
     { 
         if( wp_verify_nonce( $_POST['securityInfoDataSave'], 'saveInfoData' ) && current_user_can( 'manage_options' ) ) {
             update_option( 'mhste_company_name', sanitize_text_field( $_POST['mhste_company_name'] ) );
@@ -32,7 +34,7 @@ class MhsWebsiteInfoPage
         <?php }
     }
     
-    function infoPageHTML() 
+    public function infoPageHTML() 
     { ?>
         <div class="wrap">
             <h1><?php esc_html_e('Contact info', '_pluginname') ?></h1>

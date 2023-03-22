@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: MHS Theme Extensions\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-22 09:30+0000\n"
-"PO-Revision-Date: 2023-03-22 10:38+0000\n"
+"PO-Revision-Date: 2023-03-22 09:35+0000\n"
 "Last-Translator: \n"
 "Language-Team: Polski\n"
 "Language: pl_PL\n"
@@ -50,7 +50,7 @@ msgstr "NIP"
 
 #: inc/mhs-shortcodes.php:20
 msgid "Contact"
-msgstr "Informacje kontaktowe"
+msgstr ""
 
 #: inc/mhs-info-page.php:14 inc/mhs-info-page.php:40
 msgid "Contact info"

@@ -1,11 +1,12 @@
 <?php
 
-function mhs_get_icon($icon='', $color='currentColor', $size=25) {
-    if($color == '') :
+function mhs_get_icon( $icon='', $color='currentColor', $size=25 ) 
+{
+    if($color == '') {
         $color = 'currentColor';
-    endif;
+    }
 
-    $output = '<span class="t-icon__box" style="width:'.$size.'px;height:'.$size.'px;">';
+    $output = '<span class="mhste-icon__box" style="width:'.$size.'px;height:'.$size.'px;">';
     
     switch($icon) {
         case 'icon-info':

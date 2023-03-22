@@ -2,7 +2,7 @@
 
 /*
  * Plugin Name:     MHS Theme Extension
- * Version:         1.0.0
+ * Version:         1.0.3
  * Requires PHP:    7.4
  * Author:          MIKE HOME STUDIO Michał Okoń
  * Author URI:      https://mikehomestudio.pl
@@ -10,6 +10,8 @@
  * Domain Path:     /languages
  * License:         GPL v2 or later
  */
+
+namespace MhsThemeExtension;
 
 if( ! defined( 'ABSPATH' ) ) exit;
 
@@ -23,12 +25,12 @@ define('MHSTE_PLUGIN_CSS_DIR', $pluginCssDir);
 
 class MhsMain 
 {
-    function __construct() 
+    public function __construct() 
     {
         add_action( 'init', array( $this, 'languages' ) ); 
     }
 
-    function languages() 
+    public function languages() 
     {
         load_plugin_textdomain( '_pluginname', false, MHSTE_PLUGIN_DIR . '/languages' );
     }

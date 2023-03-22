@@ -20,10 +20,17 @@ const server = browserSync.create();
 const PRODUCTION = yargs.argv.prod;
 
 const paths = {
+	rename: {
+		src: [
+			'languages/_pluginname.*',
+			'languages/_pluginname*.po',
+			'languages/_pluginname*.mo'
+		]
+	},
 	styles: {
 		src: [
-			'src/scss/mhs-extension.scss' 
-			// 'src/scss/admin.scss',
+			'src/scss/mhs-extension.scss',
+			'src/scss/mhset-style.scss',
 			// 'src/scss/editor.scss'
 		],
 		dest: 'assets/css',
@@ -55,11 +62,21 @@ const paths = {
 			'!.gitignore', 
 			'!gulpfile.js', 
 			'!package.json', 
-			'!package-lock.json'
+			'!package-lock.json',
+			'!languages/_pluginname*.*'
 		],
 		dest: 'packaged'
 	}
 };
+
+function replace_filenames(done) {
+	src(paths.rename.src)
+		.pipe(rename((path) => {
+			path.basename = path.basename.replace('_pluginname', info.name)
+		}))
+		.pipe(dest('languages/'))
+	done();
+}
 
 async function makeZip(done) {
 	await src(paths.package.src)
@@ -149,6 +166,7 @@ function watchChanges(done) {
 
 exports.styles = styles;
 exports.watchChanges = watchChanges;
+exports.replace_filenames = replace_filenames;
 exports.images = images;
 exports.copy = copy;
 exports.cleanStuff = cleanStuff;
