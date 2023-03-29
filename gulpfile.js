@@ -29,8 +29,8 @@ const paths = {
 	},
 	styles: {
 		src: [
-			'src/scss/mhs-extension.scss',
-			'src/scss/mhset-style.scss',
+			'src/scss/mhste-admin.scss',
+			'src/scss/mhste-style.scss',
 			// 'src/scss/editor.scss'
 		],
 		dest: 'assets/css',
@@ -63,7 +63,9 @@ const paths = {
 			'!gulpfile.js', 
 			'!package.json', 
 			'!package-lock.json',
-			'!languages/_pluginname*.*'
+			'!languages/_pluginname*.*',
+			'!languages/*backup*.*',
+			'!inc/dump.php'
 		],
 		dest: 'packaged'
 	}

@@ -1,9 +1,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MHS Theme Extensions\n"
+"Project-Id-Version: MHS Theme Extension\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-22 08:46+0000\n"
+"POT-Creation-Date: 2023-03-29 18:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -14,57 +14,57 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.6.3; wp-6.1.1\n"
-"X-Domain: _pluginname"
+"X-Domain: mhste"
 
-#: inc/mhs-info-page.php:69
+#: inc/Admin/Info.php:94
 msgid "Address Line 1:"
 msgstr ""
 
-#: inc/mhs-info-page.php:73
+#: inc/Admin/Info.php:98
 msgid "Address Line 2:"
 msgstr ""
 
-#: inc/mhs-settings-page.php:77
+#: inc/Admin/Woo.php:73
 msgid "After add to cart form"
 msgstr ""
 
-#: inc/mhs-settings-page.php:78
+#: inc/Admin/Woo.php:74
 msgid "After single product summary"
 msgstr ""
 
-#: inc/mhs-settings-page.php:76
+#: inc/Admin/Woo.php:72
 msgid "Before add to cart form"
 msgstr ""
 
-#: inc/mhs-settings-page.php:74
+#: inc/Admin/Woo.php:70
 msgid "Before single product"
 msgstr ""
 
-#: inc/mhs-info-page.php:49
+#: inc/Admin/Info.php:74
 msgid "Company name:"
 msgstr ""
 
-#: inc/mhs-info-page.php:53
+#: inc/Admin/Info.php:78
 msgid "Company VAT Number:"
 msgstr ""
 
-#: inc/mhs-shortcodes.php:20
-msgid "Contact"
-msgstr ""
-
-#: inc/mhs-info-page.php:14 inc/mhs-info-page.php:40
+#: inc/Admin/Info.php:65
 msgid "Contact info"
 msgstr ""
 
-#: inc/mhs-settings-page.php:73
+#: inc/Admin/Woo.php:69
 msgid "Disable"
 msgstr ""
 
-#: inc/mhs-info-page.php:63
+#: inc/Admin/Info.php:88
 msgid "Email:"
 msgstr ""
 
-#: inc/mhs-settings-page.php:85
+#: inc/Admin/Page.php:88
+msgid "Enable/Disable settings"
+msgstr ""
+
+#: inc/Admin/Woo.php:81
 msgid "Enter message here..."
 msgstr ""
 
@@ -72,19 +72,27 @@ msgstr ""
 msgid "https://mikehomestudio.pl"
 msgstr ""
 
-#: inc/mhs-settings-page.php:75
+#: inc/Admin/Woo.php:71
 msgid "In single product sumary box"
 msgstr ""
 
-#: inc/mhs-settings-page.php:72
+#: inc/Admin/Info.php:29 inc/Admin/Info.php:30
+msgid "Informacje"
+msgstr ""
+
+#: inc/Admin/Page.php:94
+msgid "Manage options"
+msgstr ""
+
+#: inc/Admin/Woo.php:68
 msgid "Message on product page:"
 msgstr ""
 
-#: inc/mhs-settings-page.php:84
+#: inc/Admin/Woo.php:80
 msgid "Message:"
 msgstr ""
 
-#: inc/mhs-settings-page.php:15
+#: inc/Admin/Page.php:41
 msgid "MHS Option"
 msgstr ""
 
@@ -96,39 +104,44 @@ msgstr ""
 msgid "MIKE HOME STUDIO Michał Okoń"
 msgstr ""
 
-#: inc/mhs-info-page.php:59
+#: inc/Frontend/ContactInfo.php:35
+msgid "No contact info to view."
+msgstr ""
+
+#: inc/Admin/Info.php:84
 msgid "Phone number:"
 msgstr ""
 
-#: inc/mhs-settings-page.php:89 inc/mhs-info-page.php:78
+#: inc/Admin/Info.php:103 inc/Admin/Woo.php:85 inc/Admin/Page.php:121
 msgid "Save changes"
 msgstr ""
 
-#: inc/mhs-settings-page.php:16 inc/mhs-settings-page.php:62
+#: inc/Admin/Page.php:51 inc/Admin/Page.php:52
 msgid "Settings"
 msgstr ""
 
-#: inc/mhs-info-page.php:32
-msgid "Sorry, you do not have permission to Perform that action."
-msgstr ""
-
-#: inc/mhs-settings-page.php:34
+#: inc/Admin/Info.php:55 inc/Admin/Woo.php:49 inc/Admin/Page.php:78
 msgid "Sorry, you do not have permission to perform that action."
 msgstr ""
 
-#: inc/mhs-settings-page.php:69
+#: inc/Admin/Page.php:117
 msgid ""
-"WooCommerce is not activated! Activate WooCommerce to enable this options."
+"The WooCommerce is disabled or not installed. Please install and activate "
+"WooCommerce first"
 msgstr ""
 
-#: inc/mhs-settings-page.php:68
+#: inc/Admin/Woo.php:28
+msgid "WooCommerce"
+msgstr ""
+
+#: inc/Admin/Woo.php:27 inc/Admin/Woo.php:59 inc/Admin/Woo.php:65
 msgid "WooCommerce options"
 msgstr ""
 
-#: inc/mhs-info-page.php:28
+#: inc/Admin/Info.php:49
 msgid "Your informations are succefuly saved."
 msgstr ""
 
-#: inc/mhs-settings-page.php:32
+#: inc/Admin/Woo.php:43 inc/Admin/Page.php:70
 msgid "Your settings are succefuly saved."
 msgstr ""

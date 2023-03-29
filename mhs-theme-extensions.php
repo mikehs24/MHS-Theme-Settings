@@ -1,19 +1,28 @@
 <?php
-
 /*
  * Plugin Name:     MHS Theme Extension
- * Version:         1.0.3
+ * Version:         1.1.0
  * Requires PHP:    7.4
  * Author:          MIKE HOME STUDIO Michał Okoń
  * Author URI:      https://mikehomestudio.pl
- * Text Domain:     _pluginname
+ * Text Domain:     mhste
  * Domain Path:     /languages
  * License:         GPL v2 or later
  */
 
-namespace MhsThemeExtension;
+ if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+} // Exit if accessed directly
 
-if( ! defined( 'ABSPATH' ) ) exit;
+// require_once 'inc/dump.php';
+require_once 'inc/Internalization.php';
+require_once 'inc/Admin/Page.php';
+require_once 'inc/Frontend/Woo.php';
+require_once 'inc/Frontend/ContactInfo.php';
+require_once 'inc/Frontend/FrontendAssets.php';
+        
+require_once 'inc/helpers.php';
+require_once('inc/icons.php');
 
 $pluginDir = dirname(plugin_basename(__FILE__));
 $pluginMainPath = plugin_dir_url(__FILE__);
@@ -23,24 +32,10 @@ define('MHSTE_PLUGIN_DIR', $pluginDir);
 define('MHSTE_PLUGIN_FULL_PATH_DIR', $pluginMainPath);
 define('MHSTE_PLUGIN_CSS_DIR', $pluginCssDir);
 
-class MhsMain 
-{
-    public function __construct() 
-    {
-        add_action( 'init', array( $this, 'languages' ) ); 
-    }
+use Mhs\Admin\Page;
+use Mhs\Frontend\FrontendAssets;
+use Mhs\Internalization;
 
-    public function languages() 
-    {
-        load_plugin_textdomain( '_pluginname', false, MHSTE_PLUGIN_DIR . '/languages' );
-    }
-}
-
-$mhsMain = new MhsMain();
-
-require_once('inc/mhs-settings-page.php');
-require_once('inc/mhs-info-page.php');
-require_once('inc/mhs-icons.php');
-require_once('inc/mhs-shortcodes.php');
-require_once('inc/mhs-helpers.php');
-require_once('inc/mhs-assets.php');
+new Page();
+new FrontendAssets();
+new Internalization();
